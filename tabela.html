@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        tfoot td,
+        table th {
+            background: #ddd;
+        }
+
+        tfoot td {
+            font-style: italic;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor </p>
+    <div class="responsive-table">
+        <table>
+            <caption> Uma descriação</caption>
+            <thead>
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 2</th>
+                    <th>Titulo 3</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>carro</td>
+                    <td>moto</td>
+                    <td>R$200</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Comida</td>
+                    <td>R$200</td>
+                </tr>
+                <tr>
+                    <td>ps1</td>
+                    <td>xbox 2</td>
+                    <td>R$100</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td colspan="2">TOTAL: R$500</td>
+                </tr>
+                <tr>
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
